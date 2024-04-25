@@ -1,0 +1,17 @@
+QWidget {
+    background-color: #1e1d23;
+    color: #d1fa78;
+}
+QMessageBox{
+    color: #e20d0d;
+}
+QMenuBar{
+    background-color: #47474b;
+    color: #d1fa78;
+}
+QComboBox {
+    margin-right: 20px;
+}
+QComboBox::drop-down {
+    subcontrol-origin: margin;
+}
