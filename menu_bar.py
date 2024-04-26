@@ -1,5 +1,5 @@
-from PyQt5.QtWidgets import QAction, QMessageBox, QMenuBar, QFileDialog
-import pickle
+from PyQt5.QtWidgets import QAction, QMessageBox, QMenuBar
+
 
 class MenuBar (QMenuBar):
     def __init__(self, main_window, spline_view, parent=None) -> None:
@@ -38,11 +38,10 @@ class MenuBar (QMenuBar):
 
     def about_window(self):
         str_about = '''
-        Эта программа создана для отрисовки линий
+Программа Spline Editor
 
-        Версия: 1.0
-        Разработчик: Шелконог А.А.
-        Ссылка: https://____'''
+Версия: 1.0
+Ссылка: https://____'''
         msb_about = QMessageBox()
         with open('Spline_editr/dark.qss', 'r', encoding='utf-8') as style_sheet_file:
             msb_about.setStyleSheet(style_sheet_file.read())
